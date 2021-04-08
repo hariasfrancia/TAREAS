@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "15b3b071-da47-42dd-bbc8-072f8cdee55a",
+		"name": "PYTHON_RETO_SEM3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET HELPDESK",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:7000/api/ayudas",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"ayudas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST HELPDESK",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo_caso\":\"No puede imprimir\",\r\n    \"descripcion_caso\":\"Por favor que soporte se apersone para solucionar el problema\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:7000/api/ayudas/4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"ayudas",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE HELPDESK",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo_caso\":\"No puede imprimir\",\r\n    \"descripcion_caso\":\"Estoy tratando de imprimir y no se puede\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:7000/api/ayudas/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"ayudas",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST HELPDESK",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo_caso\":\"No puede imprimir\",\r\n    \"descripcion_caso\":\"Estoy tratando de imprimir y no se puede\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:7000/api/ayudas",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"ayudas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
